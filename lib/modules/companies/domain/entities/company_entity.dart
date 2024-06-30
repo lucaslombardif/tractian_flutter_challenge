@@ -1,5 +1,5 @@
-class CompanyEntity { 
-  final String id; 
+class CompanyEntity {
+  final String id;
   final String name;
 
   const CompanyEntity({
@@ -7,18 +7,14 @@ class CompanyEntity {
     required this.name,
   });
 
-  factory CompanyEntity.fromJson(Map<String, dynamic> json) { 
-    return CompanyEntity(
-      id: json['id'],
-      name: json['name']
-    );
+  factory CompanyEntity.fromJson(Map<String, dynamic> json) {
+    return CompanyEntity(id: json['id'], name: json['name']);
   }
 
-  Map<String,dynamic> toJson() { 
-    return { 
+  Map<String, dynamic> toJson() {
+    return {
       'id': id,
       'name': name,
     };
   }
-
 }
