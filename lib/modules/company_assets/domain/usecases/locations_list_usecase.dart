@@ -1,11 +1,12 @@
-import 'package:tractian_flutter_challenge/modules/company_assets/domain/entities/location_entity.dart';
-import 'package:tractian_flutter_challenge/modules/company_assets/domain/usecases/interfaces/locations_list_usecase_interface.dart';
-import 'package:tractian_flutter_challenge/modules/company_assets/infra/repositories/locations_list_repository.dart';
+import '../../infra/repositories/locations_list_repository.dart';
+import '../entities/location_entity.dart';
+import 'interfaces/locations_list_usecase_interface.dart';
 
 class LocationsListUsecase implements LocationsListUsecaseInterface {
   final LocationsListRepository _locationsListRepository;
 
-  LocationsListUsecase({required LocationsListRepository locationsListRepository})
+  LocationsListUsecase(
+      {required LocationsListRepository locationsListRepository})
       : _locationsListRepository = locationsListRepository;
 
   @override

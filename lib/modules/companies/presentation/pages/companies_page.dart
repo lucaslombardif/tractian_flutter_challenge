@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:tractian_flutter_challenge/shared/presentation/theme/app_icons.dart';
 
+import '../../../../shared/presentation/theme/app_icons.dart';
 import '../controllers/companies_controller.dart';
 import '../widgets/company_card_widget.dart';
 

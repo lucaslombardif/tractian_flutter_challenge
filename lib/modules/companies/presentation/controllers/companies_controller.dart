@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:tractian_flutter_challenge/modules/companies/domain/usecases/interfaces/companies_list_usecase_interface.dart';
 
 import '../../domain/entities/company_entity.dart';
+import '../../domain/usecases/interfaces/companies_list_usecase_interface.dart';
 
 class CompaniesController extends GetxController
     with StateMixin<List<CompanyEntity>> {

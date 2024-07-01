@@ -1,6 +1,5 @@
-import 'package:tractian_flutter_challenge/modules/company_assets/domain/entities/location_entity.dart';
-import 'package:tractian_flutter_challenge/shared/infra/services/http_service.dart';
-
+import '../../../../shared/infra/services/http_service.dart';
+import '../../domain/entities/location_entity.dart';
 import 'interfaces/locations_list_repository_interface.dart';
 
 class LocationsListRepository implements LocationsListRepositoryInterface {

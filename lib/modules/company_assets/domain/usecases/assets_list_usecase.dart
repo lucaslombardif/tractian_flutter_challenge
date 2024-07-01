@@ -1,6 +1,6 @@
-import 'package:tractian_flutter_challenge/modules/company_assets/domain/entities/asset_entity.dart';
-import 'package:tractian_flutter_challenge/modules/company_assets/domain/usecases/interfaces/assets_list_usecase_interface.dart';
-import 'package:tractian_flutter_challenge/modules/company_assets/infra/repositories/assets_list_repository.dart';
+import '../../infra/repositories/assets_list_repository.dart';
+import '../entities/asset_entity.dart';
+import 'interfaces/assets_list_usecase_interface.dart';
 
 class AssetsListUsecase implements AssetsListUsecaseInterface {
   final AssetsListRepository _getAssetsRepository;
@@ -9,7 +9,7 @@ class AssetsListUsecase implements AssetsListUsecaseInterface {
       : _getAssetsRepository = getAssetsRepository;
 
   @override
-  Future<List<AssetEntity>> call(String companyId) async{
+  Future<List<AssetEntity>> call(String companyId) async {
     return await _getAssetsRepository.getAssets(companyId);
   }
 }
