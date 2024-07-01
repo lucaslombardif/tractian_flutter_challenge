@@ -70,4 +70,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
      - assets/images/logo_tractian.svg
+     - assets/images/asset.png
+     - assets/images/location.png
+     - assets/images/component.png
   #   - images/a_dot_ham.jpeg

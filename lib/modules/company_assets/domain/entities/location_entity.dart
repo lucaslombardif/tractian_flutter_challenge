@@ -4,10 +4,11 @@ class LocationEntity {
   final String id;
   final String name;
   final String? parentId;
-  final List<LocationEntity>? subLocations;
-  final List<AssetEntity>? assets;
+  List<AssetEntity>? assets;
+  List<LocationEntity>? subLocations;
+  bool? isComponent;
 
-  const LocationEntity({
+  LocationEntity({
     required this.id,
     required this.name,
     this.parentId,
@@ -19,7 +20,7 @@ class LocationEntity {
     return LocationEntity(
       id: json['id'],
       name: json['name'],
-      parentId: json['parentId']!,
+      parentId: json['parentId'],
     );
   }
 
@@ -27,7 +28,20 @@ class LocationEntity {
     return {
       'id': id,
       'name': name,
-      'parentId': parentId!,
+      'parentId': parentId,
+      'subLocations':
+          subLocations?.map((location) => location.toJson()).toList(),
+      'assets': assets?.map((asset) => asset.toJson()).toList(),
     };
+  }
+
+  void addSubLocation(LocationEntity subLocation) {
+    subLocations ??= [];
+    subLocations!.add(subLocation);
+  }
+
+  void addAsset(AssetEntity asset) {
+    assets ??= [];
+    assets!.add(asset);
   }
 }

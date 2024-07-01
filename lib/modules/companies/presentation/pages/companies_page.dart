@@ -26,11 +26,15 @@ class CompaniesPage extends GetView<CompaniesController> {
             itemCount: companies!.length,
             itemBuilder: (context, index) => CompanyCardWidget(
               company: companies[index],
-              onTap: () => print(companies[index].name),
+              onTap: () => onTap(companies[index].id),
             ),
           ),
         ),
       ),
     );
+  }
+
+  void onTap(String companyId) {
+    Get.toNamed('/assets', parameters: {'companyId': companyId});
   }
 }

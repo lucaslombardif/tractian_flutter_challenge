@@ -9,6 +9,7 @@ import 'package:tractian_flutter_challenge/modules/company_assets/domain/usecase
 import 'package:tractian_flutter_challenge/modules/company_assets/domain/usecases/locations_list_usecase.dart';
 import 'package:tractian_flutter_challenge/modules/company_assets/infra/repositories/assets_list_repository.dart';
 import 'package:tractian_flutter_challenge/modules/company_assets/infra/repositories/locations_list_repository.dart';
+import 'package:tractian_flutter_challenge/modules/company_assets/presentation/controllers/assets_controller.dart';
 
 import '../services/http_service.dart';
 
@@ -43,8 +44,13 @@ class DependencyInjection implements Bindings {
     Get.put<LocationsListRepository>(
         LocationsListRepository(httpService: Get.find<HttpService>()));
 
-    Get.put<LocationsListUsecaseInterface>(
-      LocationsListUsecase(locationsListRepository: Get.find<LocationsListRepository>()));
-    
+    Get.put<LocationsListUsecaseInterface>(LocationsListUsecase(
+        locationsListRepository: Get.find<LocationsListRepository>()));
+
+    Get.put<AssetsController>(
+      AssetsController(
+          assetsListUsecase: Get.find<AssetsListUsecaseInterface>(),
+          locationsListUsecase: Get.find<LocationsListUsecaseInterface>()),
+    );
   }
 }

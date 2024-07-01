@@ -9,7 +9,7 @@ class CompanyCardWidget extends StatelessWidget {
     required this.company,
   });
 
-  final Function onTap;
+  final void Function() onTap;
   final CompanyEntity company;
 
   @override
@@ -17,7 +17,7 @@ class CompanyCardWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(14),
       child: InkWell(
-        onTap: () => onTap,
+        onTap: onTap,
         child: Container(
           height: 85,
           decoration: const BoxDecoration(
