@@ -1,7 +1,6 @@
 import 'package:dio/io.dart';
 
-class HttpService extends DioForNative { 
-  
+class HttpService extends DioForNative {
   HttpService() {
     _boot();
   }

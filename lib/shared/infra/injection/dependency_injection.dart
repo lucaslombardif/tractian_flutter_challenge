@@ -1,16 +1,16 @@
 import 'package:get/get.dart';
-import 'package:tractian_flutter_challenge/modules/companies/domain/usecases/companies_list_usecase.dart';
-import 'package:tractian_flutter_challenge/modules/companies/domain/usecases/interfaces/companies_list_usecase_interface.dart';
-import 'package:tractian_flutter_challenge/modules/companies/infra/repositories/companies_list_repository.dart';
-import 'package:tractian_flutter_challenge/modules/companies/presentation/controllers/companies_controller.dart';
-import 'package:tractian_flutter_challenge/modules/company_assets/domain/usecases/assets_list_usecase.dart';
-import 'package:tractian_flutter_challenge/modules/company_assets/domain/usecases/interfaces/assets_list_usecase_interface.dart';
-import 'package:tractian_flutter_challenge/modules/company_assets/domain/usecases/interfaces/locations_list_usecase_interface.dart';
-import 'package:tractian_flutter_challenge/modules/company_assets/domain/usecases/locations_list_usecase.dart';
-import 'package:tractian_flutter_challenge/modules/company_assets/infra/repositories/assets_list_repository.dart';
-import 'package:tractian_flutter_challenge/modules/company_assets/infra/repositories/locations_list_repository.dart';
-import 'package:tractian_flutter_challenge/modules/company_assets/presentation/controllers/assets_controller.dart';
 
+import '../../../modules/companies/domain/usecases/companies_list_usecase.dart';
+import '../../../modules/companies/domain/usecases/interfaces/companies_list_usecase_interface.dart';
+import '../../../modules/companies/infra/repositories/companies_list_repository.dart';
+import '../../../modules/companies/presentation/controllers/companies_controller.dart';
+import '../../../modules/company_assets/domain/usecases/assets_list_usecase.dart';
+import '../../../modules/company_assets/domain/usecases/interfaces/assets_list_usecase_interface.dart';
+import '../../../modules/company_assets/domain/usecases/interfaces/locations_list_usecase_interface.dart';
+import '../../../modules/company_assets/domain/usecases/locations_list_usecase.dart';
+import '../../../modules/company_assets/infra/repositories/assets_list_repository.dart';
+import '../../../modules/company_assets/infra/repositories/locations_list_repository.dart';
+import '../../../modules/company_assets/presentation/controllers/assets_controller.dart';
 import '../services/http_service.dart';
 
 class DependencyInjection implements Bindings {
