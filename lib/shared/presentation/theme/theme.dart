@@ -6,6 +6,7 @@ final appTheme = ThemeData(
   listTileTheme: const ListTileThemeData(shape: Border()),
   primaryColor: const Color(0xFF0D0452),
   primarySwatch: Colors.blue,
+  focusColor: Colors.blue,
   progressIndicatorTheme: const ProgressIndicatorThemeData(color: Colors.blue),
   appBarTheme: const AppBarTheme(
     iconTheme: IconThemeData(color: Colors.white),

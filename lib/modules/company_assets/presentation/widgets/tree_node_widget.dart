@@ -18,14 +18,14 @@ class TreeNodeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      clipBehavior: Clip.none,
+      shrinkWrap: true,
+      clipBehavior: Clip.hardEdge,
       children: _buildTreeNodes(locations, assets, 0),
     );
   }
 
   List<Widget> _buildTreeNodes(
       List<LocationEntity> locations, List<AssetEntity> assets, int level) {
-        
     locations.sort((a, b) {
       int aCount = (a.subLocations?.length ?? 0) + (a.assets?.length ?? 0);
       int bCount = (b.subLocations?.length ?? 0) + (b.assets?.length ?? 0);

@@ -29,7 +29,7 @@ class CompanyCardWidget extends StatelessWidget {
               )
             ],
             borderRadius: BorderRadius.all(
-              Radius.circular(8),
+              Radius.circular(4),
             ),
             color: Color(0xFF127CD3),
           ),

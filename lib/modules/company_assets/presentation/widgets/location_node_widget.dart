@@ -21,7 +21,7 @@ class LocationNodeWidget extends StatelessWidget {
             (location.assets != null && location.assets!.isNotEmpty);
 
     return Padding(
-      padding: EdgeInsets.only(left: 8.0 * level),
+      padding: EdgeInsets.only(left: 12.0 * level),
       child: hasChildren
           ? ExpansionTile(
               key: PageStorageKey<String>(location.id),

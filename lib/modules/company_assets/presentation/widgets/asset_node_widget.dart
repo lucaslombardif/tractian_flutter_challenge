@@ -17,14 +17,14 @@ class AssetNodeWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     bool hasChildren = asset.subAssets != null && asset.subAssets!.isNotEmpty;
     return Padding(
-      padding: EdgeInsets.only(left: 8.0 * level),
+      padding: EdgeInsets.only(left: 12.0 * level),
       child: hasChildren
           ? ExpansionTile(
               key: PageStorageKey<String>(asset.id),
               title: Row(
                 children: [
                   _getAssetIcon(asset),
-                  const SizedBox(width: 8.0),
+                  const SizedBox(width: 10),
                   Expanded(
                     child: Row(
                       children: [
@@ -62,12 +62,12 @@ class AssetNodeWidget extends StatelessWidget {
   Widget _getStatusTypeIcon(AssetEntity asset) {
     if (asset.isCritical) {
       return const Padding(
-        padding: EdgeInsets.only(left: 8.0),
+        padding: EdgeInsets.only(left: 10),
         child: Icon(Icons.circle, color: Colors.red, size: 12.0),
       );
     } else if (asset.isEnergy) {
       return const Padding(
-        padding: EdgeInsets.only(left: 8.0),
+        padding: EdgeInsets.only(left: 10),
         child: Icon(Icons.bolt, color: Colors.green, size: 22.0),
       );
     }
