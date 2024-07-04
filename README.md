@@ -1,16 +1,22 @@
-# tractian_flutter_challenge
+# Tractian Mobile Challenge 
 
-A new Flutter project.
+An app to list companies assets (Tractian Mobile Challenge - Solution).
 
-## Getting Started
+## Demo Video
+https://github.com/lucaslombardif/tractian_flutter_challenge/assets/23706340/811d1520-0583-4553-9998-3895812813ab
 
-This project is a starting point for a Flutter application.
+## Points to improve
+- [ ] Add unit, integration and widget tests;
+- [ ] Increase performance;
+- [ ] Improve UI and styles;
+- [ ] Refactor a part of code; 
 
-A few resources to get you started if this is your first Flutter project:
+## Third-party libraries used in this project
+- Dio
+- Get
+- flutter_svg
+  
+## Screenshots
+  <img alt="Tractian App" src="https://raw.githubusercontent.com/lucaslombardif/tractian_flutter_challenge/main/screenshots/Screenshot_1720099543.png?token=GHSAT0AAAAAACTQJIOAL36JJ23ZVKB676B6ZUGVBKQ" />
+  <img alt="Assets Page" src="https://raw.githubusercontent.com/lucaslombardif/tractian_flutter_challenge/main/screenshots/Screenshot_1720099551.png?token=GHSAT0AAAAAACTQJIOASKXU2KYRF2VEY3XGZUGVCRQ" />
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
