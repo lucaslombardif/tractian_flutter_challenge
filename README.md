@@ -17,6 +17,6 @@ https://github.com/lucaslombardif/tractian_flutter_challenge/assets/23706340/811
 - flutter_svg
   
 ## Screenshots
-  <img alt="Tractian App" src="https://raw.githubusercontent.com/lucaslombardif/tractian_flutter_challenge/main/screenshots/Screenshot_1720099543.png?token=GHSAT0AAAAAACTQJIOAL36JJ23ZVKB676B6ZUGVBKQ" />
-  <img alt="Assets Page" src="https://raw.githubusercontent.com/lucaslombardif/tractian_flutter_challenge/main/screenshots/Screenshot_1720099551.png?token=GHSAT0AAAAAACTQJIOASKXU2KYRF2VEY3XGZUGVCRQ" />
+![Screenshot_1720099543](https://github.com/lucaslombardif/tractian_flutter_challenge/assets/23706340/154948c5-2329-4c73-8550-f46433f51e4c)
+![Screenshot_1720099551](https://github.com/lucaslombardif/tractian_flutter_challenge/assets/23706340/a85ae9af-082f-41bc-855b-1e1e6e903f1c)
 
