@@ -24,8 +24,8 @@ class AssetsController extends GetxController
       required LocationsListUsecaseInterface locationsListUsecase})
       : _assetsListUsecase = assetsListUsecase,
         _locationsListUsecase = locationsListUsecase,
-        filterEnergy = false.obs, // Inicializando como false
-        filterCritical = false.obs; //;
+        filterEnergy = false.obs, 
+        filterCritical = false.obs;
 
   Future<void> getLocationsAndAssets(String companyId) async {
     change(locationsFormatted, status: RxStatus.loading());

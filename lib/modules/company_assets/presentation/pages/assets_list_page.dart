@@ -21,7 +21,6 @@ class AssetsListPage extends GetView<AssetsController> {
       )),
     body: Column(
         children: [
-          // Adicione o widget de filtros
           AssetsFilterWidget(controller: controller),
           Expanded(
             child: controller.obx(

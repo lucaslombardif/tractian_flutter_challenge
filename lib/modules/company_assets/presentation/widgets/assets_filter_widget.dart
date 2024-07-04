@@ -16,7 +16,6 @@ class AssetsFilterWidget extends StatelessWidget {
       padding: const EdgeInsets.all(10.0),
       child: Column(
         children: [
-          // Campo de pesquisa
           Container(
             constraints: const BoxConstraints(maxHeight: 34),
             child: TextField(
@@ -42,11 +41,8 @@ class AssetsFilterWidget extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8.0),
-
-          // Filtros de energia e crítico
           Row(
             children: [
-              // Filtro de energia
               Expanded(
                 child: Obx(
                   () => InkWell(
@@ -77,8 +73,6 @@ class AssetsFilterWidget extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 8.0),
-
-              // Filtro crítico
               Expanded(
                 child: Obx(
                   () => InkWell(
